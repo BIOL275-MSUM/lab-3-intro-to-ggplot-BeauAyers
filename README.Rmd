@@ -1,11 +1,10 @@
 ---
 title: "Lab 3: Introduction to ggplot"
-author: "___"
+author: "Beau Ayers"
 date: "`r format(Sys.Date())`"
 output: github_document
 ---
 
-> INSTRUCTIONS: REMOVE THIS LINE AND REPLACE ____ WITH YOUR OWN TEXT
 
 Welcome to my Lab 2 repository for Quantitative Biology BIOL 275 at MSUM.
 
@@ -13,13 +12,13 @@ Welcome to my Lab 2 repository for Quantitative Biology BIOL 275 at MSUM.
 
 The objectives of this lab are:
 
-- ___
-- ___
+- Understand the grammar of and create graphs
+- Edit an image in R markdown code
 
 ## Repository contents
 
 The repository contains the following scripts:
 
 - [Lab Report 3](lab-report.md)
-- ___
-
+- [Lab Assignment Script](lab-assignment-script.R)
+- [Tutorial](tutorial-walk-through.R)
