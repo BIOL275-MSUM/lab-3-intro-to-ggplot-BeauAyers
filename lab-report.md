@@ -75,7 +75,7 @@ firefly_data
 # ... with 25 more rows
 
 ggplot(data = firefly_data) +
-  geom_histogram(mapping = aes(x = spermatophoreMass), binwidth = 0.005,
+  geom_histogram(mapping = aes(x = spermatophoreMass), binwidth = 0.015,
                  fill = "#C5351B", color = "black") +
   labs(x = "Mass of Spermatophore (mg)", y = "Frequency (number of fireflies)") +
   theme_classic() +
@@ -147,11 +147,6 @@ nrow(distinct(birds, order))
 > axis labels.
 
 ``` r
-library(auk)                          # load the auk package
-birds <- ebird_taxonomy %>%           # start with the ebird_taxonomy data
-  as_tibble() %>%                     # tibbles print better in the console
-  filter(category == "species")       # remove non-species taxa
-
 ggplot(data = birds) +
   geom_bar(mapping = aes(x = fct_infreq(order)), fill = "#C5351B") + 
   labs(x = "Order", y = "Frequency (number of birds)", 
@@ -160,7 +155,7 @@ ggplot(data = birds) +
   theme_classic(base_size = 12) +
   theme(
     axis.title = element_text(face = "bold"),
-    axis.text = element_text(color = "black", size = rel(1)),
+    axis.text = element_text(color = "black", size = rel(0.75)),
     axis.text.x = element_text(angle = 45, hjust = 1),
     axis.ticks.x = element_blank()
   )
@@ -178,7 +173,7 @@ I reviewed MaryJo’s lab report at this URL:
 <https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-MaryJo-Nelson>
 
 MaryJo reviewed my lab report at this URL:
-<https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-BeauAyers>
+<https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-BeauAyers/issues/1>
 
 ## Session Info
 
